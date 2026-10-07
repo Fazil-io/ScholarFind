@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ScholarFind | Find Scholarships</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-content">
+
+            <a href="#" class="logo">
+                Scholar<span>Find</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#find">Find Scholarships</a>
+                <a href="#how">How It Works</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <button id="themeToggle" class="theme-btn">
+                🌙
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <div class="badge">
+                        🎓 Scholarship Discovery Platform
+                    </div>
+
+                    <h1>
+                        Find scholarships
+                        <span>made for you.</span>
+                    </h1>
+
+                    <p>
+                        Tell us about your education and background.
+                        We'll help you discover scholarships that match
+                        your profile.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#find" class="primary-btn">
+                            Find Scholarships →
+                        </a>
+
+                        <a href="#how" class="secondary-btn">
+                            How it works
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-card">
+
+                    <div class="hero-card-top">
+                        <span>Scholarship Match</span>
+                        <span class="check">✓</span>
+                    </div>
+
+                    <div class="match-circle">
+                        <strong>92%</strong>
+                        <small>Match</small>
+                    </div>
+
+                    <h3>Engineering Excellence Scholarship</h3>
+
+                    <p>
+                        Based on your degree, department and eligibility.
+                    </p>
+
+                    <div class="mini-details">
+
+                        <div>
+                            <span>Amount</span>
+                            <strong>₹50,000</strong>
+                        </div>
+
+                        <div>
+                            <span>Deadline</span>
+                            <strong>30 Nov</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FIND SECTION ================= -->
+
+        <section class="find-section" id="find">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        YOUR PROFILE
+                    </span>
+
+                    <h2>Tell us about yourself</h2>
+
+                    <p>
+                        Enter your details to discover relevant
+                        scholarship opportunities.
+                    </p>
+
+                </div>
+
+
+                <div class="profile-card">
+
+                    <form id="scholarshipForm">
+
+                        <!-- PERSONAL INFORMATION -->
+
+                        <div class="form-section-title">
+
+                            <div class="section-icon">
+                                👤
+                            </div>
+
+                            <div>
+                                <h3>Personal Information</h3>
+                                <p>Basic details about you</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Enter your full name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="state">
+                                    State
+                                </label>
+
+                                <select id="state" required>
+
+                                    <option value="">
+                                        Select your state
+                                    </option>
+
+                                    <option value="tamilnadu">
+                                        Tamil Nadu
+                                    </option>
+
+                                    <option value="kerala">
+                                        Kerala
+                                    </option>
+
+                                    <option value="karnataka">
+                                        Karnataka
+                                    </option>
+
+                                    <option value="andhra">
+                                        Andhra Pradesh
+                                    </option>
+
+                                    <option value="telangana">
+                                        Telangana
+                                    </option>
+
+                                    <option value="maharashtra">
+                                        Maharashtra
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- EDUCATION -->
+
+                        <div class="form-section-title education-title">
+
+                            <div class="section-icon">
+                                🎓
+                            </div>
+
+                            <div>
+                                <h3>Education</h3>
+                                <p>Tell us about your current studies</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="degree">
+                                    Degree
+                                </label>
+
+                                <select id="degree" required>
+
+                                    <option value="">
+                                        Select your degree
+                                    </option>
+
+                                    <option value="btech">
+                                        B.Tech / B.E
+                                    </option>
+
+                                    <option value="bsc">
+                                        B.Sc
+                                    </option>
+
+                                    <option value="bca">
+                                        BCA
+                                    </option>
+
+                                    <option value="bcom">
+                                        B.Com
+                                    </option>
+
+                                    <option value="ba">
+                                        B.A
+                                    </option>
+
+                                    <option value="bba">
+                                        BBA
+                                    </option>
+
+                                    <option value="mba">
+                                        MBA
+                                    </option>
+
+                                    <option value="mtech">
+                                        M.Tech
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="department">
+                                    Department
+                                </label>
+
+                                <select id="department" required>
+
+                                    <option value="">
+                                        Select department
+                                    </option>
+
+                                    <option value="cse">
+                                        Computer Science & Engineering
+                                    </option>
+
+                                    <option value="it">
+                                        Information Technology
+                                    </option>
+
+                                    <option value="ece">
+                                        Electronics & Communication
+                                    </option>
+
+                                    <option value="eee">
+                                        Electrical & Electronics
+                                    </option>
+
+                                    <option value="mech">
+                                        Mechanical Engineering
+                                    </option>
+
+                                    <option value="civil">
+                                        Civil Engineering
+                                    </option>
+
+                                    <option value="aiml">
+                                        Artificial Intelligence & ML
+                                    </option>
+
+                                    <option value="ds">
+                                        Data Science
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="year">
+                                    Year of Study
+                                </label>
+
+                                <select id="year" required>
+
+                                    <option value="">
+                                        Select year
+                                    </option>
+
+                                    <option value="1">
+                                        1st Year
+                                    </option>
+
+                                    <option value="2">
+                                        2nd Year
+                                    </option>
+
+                                    <option value="3">
+                                        3rd Year
+                                    </option>
+
+                                    <option value="4">
+                                        4th Year
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="income">
+                                    Annual Family Income
+                                </label>
+
+                                <select id="income" required>
+
+                                    <option value="">
+                                        Select income range
+                                    </option>
+
+                                    <option value="1">
+                                        Below ₹1 Lakh
+                                    </option>
+
+                                    <option value="2">
+                                        ₹1 – ₹2.5 Lakhs
+                                    </option>
+
+                                    <option value="3">
+                                        ₹2.5 – ₹5 Lakhs
+                                    </option>
+
+                                    <option value="4">
+                                        ₹5 – ₹8 Lakhs
+                                    </option>
+
+                                    <option value="5">
+                                        Above ₹8 Lakhs
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ELIGIBILITY -->
+
+                        <div class="form-section-title education-title">
+
+                            <div class="section-icon">
+                                ✓
+                            </div>
+
+                            <div>
+                                <h3>Eligibility</h3>
+                                <p>Additional information for better matches</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid single-row">
+
+                            <div class="form-group">
+
+                                <label for="category">
+                                    Category
+                                </label>
+
+                                <select id="category" required>
+
+                                    <option value="">
+                                        Select category
+                                    </option>
+
+                                    <option value="general">
+                                        General
+                                    </option>
+
+                                    <option value="obc">
+                                        OBC
+                                    </option>
+
+                                    <option value="sc">
+                                        SC
+                                    </option>
+
+                                    <option value="st">
+                                        ST
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-action">
+
+                            <button
+                                type="submit"
+                                class="find-btn"
+                            >
+                                Find My Scholarships
+                                <span>→</span>
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RESULTS ================= -->
+
+        <section
+            class="results-section"
+            id="resultsSection"
+        >
+
+            <div class="container">
+
+                <div class="results-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            YOUR RESULTS
+                        </span>
+
+                        <h2>
+                            Scholarships for you
+                        </h2>
+
+                        <p id="resultMessage">
+                        </p>
+
+                    </div>
+
+                    <div class="result-count" id="resultCount">
+                        0 matches
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="scholarship-grid"
+                    id="scholarshipResults"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="how-section" id="how">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        SIMPLE PROCESS
+                    </span>
+
+                    <h2>How ScholarFind works</h2>
+
+                    <p>
+                        Finding the right scholarship doesn't
+                        have to be complicated.
+                    </p>
+
+                </div>
+
+
+                <div class="steps">
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            01
+                        </div>
+
+                        <h3>Create your profile</h3>
+
+                        <p>
+                            Tell us about your education,
+                            department and background.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <h3>Get matched</h3>
+
+                        <p>
+                            Our matching system compares
+                            your profile with scholarships.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <h3>Apply confidently</h3>
+
+                        <p>
+                            Review eligibility and visit
+                            the official application portal.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about-section" id="about">
+
+            <div class="container about-box">
+
+                <div>
+
+                    <span class="section-label">
+                        ABOUT SCHOLARFIND
+                    </span>
+
+                    <h2>
+                        Making scholarship discovery easier.
+                    </h2>
+
+                </div>
+
+                <p>
+                    ScholarFind helps students discover scholarship
+                    opportunities based on their education,
+                    financial background and eligibility.
+                    Instead of searching through multiple sources,
+                    students can start with one simple profile.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+                <div class="footer-logo">
+                    Scholar<span>Find</span>
+                </div>
+
+                <p>
+                    Helping students discover opportunities.
+                </p>
+            </div>
+
+            <p>
+                © 2026 ScholarFind
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
